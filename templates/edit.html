@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Student</title>
+</head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<body>
+    <h1>Edit Student</h1>
+    <div class="form">
+    <form method="POST">
+        Name: <input type="text" name="name" value="{{ student[1] }}"><br>
+        Date of Birth: <input type="date" name="dob" value="{{ student[2] }}"><br>
+        Email: <input type="email" name="email" value="{{ student[3] }}"><br>
+        <input type="submit" value="Update">
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Detail</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<style>
+    .container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.container strong {
+    color: #4CAF50;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #388E3C;
+}
+
+</style>
+<body>
+    <h1>Student Detail</h1>
+    <div class="container">
+        <p><strong>ID:</strong> {{ student.id }}</p>
+        <p><strong>Name:</strong> {{ student.name }}</p>
+        <p><strong>Date of Birth:</strong> {{ student.dob }}</p>
+        <p><strong>Email:</strong> {{ student.email }}</p>
+        <p><a href="{{ url_for('index') }}">← Back to List</a></p>
+    </div>
+</body>
+</html>

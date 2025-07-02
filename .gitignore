@@ -1,0 +1,4 @@
+venv
+.env
+#to hide this from user in github
+
